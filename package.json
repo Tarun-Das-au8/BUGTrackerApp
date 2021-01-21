@@ -1,0 +1,35 @@
+{
+  "name": "bug-tracker",
+  "version": "1.0.0",
+  "description": "Application to allow employees to keep track of current bugs they are working to fix",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarryWilson1995/Bug-Tracker-MERN.git"
+  },
+  "author": "Harry Wilson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HarryWilson1995/Bug-Tracker-MERN/issues"
+  },
+  "homepage": "https://github.com/HarryWilson1995/Bug-Tracker-MERN#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.3",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.12"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  }
+}
